@@ -57,6 +57,8 @@ public class ArrayOps {
             }
             if (array[i] > secMax && array[i] < max)
                 secMax = array[i];
+            if (array[i] == max && array[i] > secMax)
+                secMax = array[i];
         }
         return secMax;
     }
